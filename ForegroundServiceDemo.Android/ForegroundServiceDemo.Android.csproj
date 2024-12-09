@@ -45,6 +45,9 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DeviceAPI_Android">
+      <HintPath>..\..\..\Users\user\Dropbox\Mi PC (DESKTOP-6ADT524)\Downloads\demo_uhf_uart\UHF\DeviceAPI_Android.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,7 +65,9 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ForegroundService.cs" />
+    <Compile Include="Services\KeyEventReceiver.cs" />
     <Compile Include="Services\MyBroadCastReceiver.cs" />
+    <Compile Include="Services\ScannerForegroundService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

@@ -4,6 +4,8 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Android.Views;
+using Xamarin.Forms;
 
 namespace ForegroundServiceDemo.Droid
 {
@@ -25,4 +27,17 @@ namespace ForegroundServiceDemo.Droid
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
+
+    //public override bool OnKeyUp([GeneratedEnum] Keycode keyCode, KeyEvent e)
+    //{
+    //    if (keyCode == Keycode.F9) // Reemplaza con la tecla que corresponda
+    //    {
+    //        // Envía un mensaje al Foreground Service para iniciar el escaneo
+    //        MessagingCenter.Send(this, "TriggerScan", "start_scan");
+    //        return true;
+    //    }
+    //    return base.OnKeyUp(keyCode, e);
+    //}
+
+    
 }
